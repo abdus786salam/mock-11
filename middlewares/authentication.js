@@ -27,7 +27,7 @@ const adminauthentication=(req,res,next)=>{
             } else {
               console.log(decodedPayload.isAdmin, decodedHeader);
 
-             if(decodedPayload.isAdmin=='true'){
+             if(decodedPayload.isAdmin==true){
 
                  next()
              }else{
